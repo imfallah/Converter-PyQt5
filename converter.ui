@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-bottom-right-radius: 50px;
+border-top-left-radius: 50px;</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(000000), stop:1 rgb(35, 255, 222));
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#exit{
+
+ background-color:transparent;
+
+
+}
+#exit:hover {
+	background-color: rgb(170, 0, 0);
+    border-radius:10px
+}
+
+#exit:pressed {
+	border: 4px solid #98c1fe;
+    border-radius:10px
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../Icons/Exit.png</normaloff>../Icons/Exit.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mini">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>21</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#mini{
+
+ background-color:transparent;
+
+
+}
+#mini:hover {
+	background-color: rgb(190, 190, 0);
+    border-radius:10px
+}
+
+#mini:pressed {
+	border: 4px solid #98c1fe;
+    border-radius:10px
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../Icons/Maximize.png</normaloff>../Icons/Maximize.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>8</y>
+      <width>21</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../Icons/Minimize.png</normaloff>../Icons/Minimize.png</iconset>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="conversionComboBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>PDF to Word</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Excel to Word</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Word to PDF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Image to PDF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Image Text Extract</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="filePathLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto Medium</family>
+      <pointsize>12</pointsize>
+      <italic>false</italic>
+      <fontweight>Medium</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#filePathLabel{
+  font: 500 12pt &quot;Roboto Medium&quot;;
+  background-color:none;
+  border-bottom-right-radius: 50px;
+}
+
+
+#filePathLabel::hover{
+
+   color:rgb(255, 255, 255)
+
+
+}
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>No file selected</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>210</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT Condensed Extra Bold</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#statusLabel{
+  background-color:none;
+  border-bottom-right-radius: 50px;
+}
+
+
+#statusLabel::hover{
+
+   color:rgb(171, 39, 39)
+
+
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>status</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="convertButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>280</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#convertButton{
+   background-color:rgb(123, 125, 255);
+   border-radius:10px;
+   color: white;
+}
+
+
+#convertButon::clicked
+{
+  
+ background-color : red;
+
+}
+
+
+
+#convertButton:hover {
+	background-color: #0055ff;
+}
+
+#convertButton:pressed {
+	border: 4px solid #98c1fe;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Convert</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectFileButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+#selectFileButton{
+   background-color:rgb(255, 167, 255);
+   border-radius:10px;
+   color: white;
+}
+
+#selectFileButton::clicked
+{
+  
+ background-color : red;
+
+}
+
+
+
+#selectFileButton:hover {
+	background-color: rgb(255, 90, 49);
+}
+
+#selectFileButton:pressed {
+	border: 4px solid #98c1fe;
+}</string>
+    </property>
+    <property name="text">
+     <string>Select File</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>24</pointsize>
+      <italic>false</italic>
+      <fontweight>Black</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+#label{
+  font:;
+	font: 900 24pt &quot;Segoe UI Black&quot;;
+  background-color:none;
+  color:#fff;
+  border-bottom-right-radius: 50px;
+}
+
+#label::hover{
+
+   color:rgb(0, 0, 0)
+
+
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Converter</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
